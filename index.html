@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Welcome to MindHead</title>
+  <meta name="description" content="">
+  <meta name="author" content="Thomas O'Brien">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="custom.css">
+  <link href="jquery-ui.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.8.10/jquery.timepicker.min.css" rel="stylesheet">
+
+
+  <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <script src="http://maps.googleapis.com/maps/api/js?AIzaSyCmqbdU8ZbW95xov7O-L5C1vmGC8s4yjQc"></script> -->
+ 
+ <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+ <script src="jquery-ui.js"></script>
+ <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.8.10/jquery.timepicker.min.js"></script>
+ <script type="text/javascript" src = "script.js"></script>
+
+</head>
+
+<body>
+
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <div class="container">
+    <header class = "header">
+      <h2 class = "title">Welcome to MindHead</h2>
+    </header>
+    
+    <aside class = "description">MindHead is an app designed to simplify scheduling choices. Start by adding your constraints, those blocks
+    of time you need to schedule everything else around. Then simply add an activity with a title and a length of time and MindHead will find 
+    time in your day!</aside>
+    
+    <section class = "input">
+      <div class = "timepickers">
+
+        <div class = "blocksRow row">
+          
+          <div class = "four columns">
+            <input type="text" data-time-format="H:i" placeholder = "From" class="timepicker from"/>
+            <input type="text" data-time-format="H:i" placeholder = "To" class="timepicker to"/>
+          </div>
+
+          <div class = "four columns">
+            <input type = "text" id = "blockType" class = "blockDesc" placeholder="Work, School, etc.">
+          </div>
+
+          <div class = "four columns">
+            <input type = "text" class = "location" placeholder="Location">
+          </div>
+
+      </div>
+      </div>
+
+      <div class = "row">
+        <div class = "twelve columns">
+          <input type = "button" id = "blockMore" value ="Block off more time">
+        </div>
+      </div>
+
+    </section>
+
+    <section class = "input">
+    
+    <div class = "activities">
+
+      <div class = "activitiesRow row">
+        <div class = "four columns">
+          <input type="text" placeholder="Activity" class = "description" />
+        </div>
+        
+        <div class = "four columns">
+          <select class='duration' name='duration' required="required">
+            <option selected>One Hour</option>
+            <option>Two Hours</option>
+            <option>Three Hours</option>
+            <option>Four Hours</option>
+          </select>
+        </div>
+
+        <div class = "four columns">
+          <input type="text" placeholder="Location" class = "location" />
+        </div>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "twelve columns">
+        <input type = "button" id = "addActivity" value ="Add Another Activity" />
+      </div>
+    </div>
+    
+    </section>
+
+    <section class = "commit">
+      <div class = "row">
+        <div class = "six columns">
+          <select class = "mode" name = "mode">
+          <option selected>Transit</option>
+          <option>Walking</option>
+          </select>
+        </div>
+        <div class = "six columns">
+          <input type = "button" id = "commitButton" value = "Get Ready!" />
+        </div>
+      </div>
+    </section>
+    <section class = "row schedulesHeader">
+      <div class = "three columns">Hour</div>
+      <div class = "two columns">:00</div>
+      <div class = "two columns">:15</div>
+      <div class = "two columns">:30</div>
+      <div class = "two columns">:45</div>
+
+    <section class = "schedules twelve columns">
+    </section>
+    <footer></footer>
+
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+</body>
+
+</html>

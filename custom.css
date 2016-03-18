@@ -1,0 +1,70 @@
+body{
+  text-align: center;
+}
+h5{
+  margin-top: 3px;
+}
+.container {
+  max-width: 1000px; }
+.header {
+  margin-top: 6rem;
+  text-align: center; }
+.description{
+  border-top : 1px solid black;
+  text-align: center;
+  line-height: 2;
+  font-size: 17px;
+}
+.input{
+  border-top: 1px solid black;
+  padding-top: 1em;
+}
+.schedulesHeader{
+  border-top: 1px solid black;
+}
+.schedules{
+  border-top: 1px solid black;
+}
+label{
+  display: inline;
+}
+#blockMore{
+  display: block;
+  margin-right: 4em;
+}
+#addActivity{
+  display: block;
+  margin-right: 3.2em;
+}
+.timepicker
+{
+  width: 6em;
+  display: inline;
+  margin-right: 1em;
+}
+.twelve input{
+  float: right
+}
+.commit{
+  border-top: 1px solid black;
+  padding-top: 1em;
+}
+.schedules .row
+{
+  margin-top: 0.2em;
+}
+.segment[status="unavail"]
+{
+  background-color: #ea3636;
+  border-radius : 4px;
+}
+.segment[status="available"]
+{
+  border-radius : 4px;
+  background-color: #EEE;
+}
+.segment[status ="activity"]
+{
+  border-radius : 4px;
+  background-color: #36ea42;
+}
